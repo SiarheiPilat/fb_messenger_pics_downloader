@@ -27,7 +27,6 @@ def start():
     get_top_convos()
     ActionChains(driver).send_keys(Keys.ESCAPE).perform()
 
-#the problem is with the freaking notification pop up!
 def download_pics(convo):
     global looping
     looping = True
