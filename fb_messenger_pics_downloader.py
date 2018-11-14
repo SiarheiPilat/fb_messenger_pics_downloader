@@ -27,15 +27,17 @@ def start():
     get_top_convos()
     ActionChains(driver).send_keys(Keys.ESCAPE).perform()
 
-#the problem is with the freaking notification pop up!
-def download_pics(convo):
+#downloads both pictures and videos
+def download_all(conversation_number):
     global looping
     looping = True
-    choose_convo(convo)
+    choose_convo(conversation_number)
     while(looping):
         download_pic()
         press_next()
 
+#right now download_all() downloads the entire history of pictures, which can be too much
+#download_latest() should solve that problem by downloading a specified amount of pics
 def download_latest(range):
     return None
 
