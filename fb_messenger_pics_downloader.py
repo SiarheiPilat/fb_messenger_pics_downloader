@@ -27,8 +27,12 @@ def start():
     get_top_convos()
     ActionChains(driver).send_keys(Keys.ESCAPE).perform()
 
+<<<<<<< HEAD
 #downloads both pictures and videos
 def download_all(conversation_number):
+=======
+def download_pics(convo):
+>>>>>>> 3c64b03b4c37ec0ac88bc177c414c17580e9d768
     global looping
     looping = True
     choose_convo(conversation_number)
